@@ -7,10 +7,5 @@
   "routes": [
     { "src": "/api/(.*)", "dest": "/Portfolio-backend/index.js" },
     { "src": "/(.*)", "dest": "/Portfolio-frontend/dist/$1" }
-  ],
-  "build": {
-    "commands": {
-      "build": "npm run build --prefix Portfolio-frontend"
-    }
-  }
+  ]
 }
