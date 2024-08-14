@@ -315,6 +315,7 @@ button:focus {
     flex-direction: column;
     align-items: center;
   }
+
   .home-header h1, .home-header div.ps-5 {
     padding-left: 0px !important;
   }
@@ -407,6 +408,11 @@ button:focus {
   background-color: transparent !important;
 }
 
+.blockquote-footer {
+  margin: 5px 0 0 10px !important;
+  font-size: .6em !important;
+}
+
 .about-activity {
   text-align: left !important;
   padding-left: 1px !important;
@@ -415,6 +421,12 @@ button:focus {
 @media (max-width: 767px) {
   .about-img {
     padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 991.5px) {
+  .company-image {
+    padding-right: 1rem !important;
   }
 }
 

@@ -42,12 +42,14 @@ function AboutCard() {
                                   src={career.careerImage}
                                   alt={"Logo of " + career.companyName}
                                   width="50px"
+                                  className="company-image"
                                 ></img>
                               </Col>
                               <Col className="ms-2">
                                 {career.jobTitle} at {career.companyName}
                               </Col>
                             </Row>
+                            <figcaption class="blockquote-footer">{career.jobLocation}</figcaption>
                           </h4>
                           <ul className="ms-3">
                             {career.jobDescription.map((description) => (
