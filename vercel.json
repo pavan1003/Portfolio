@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/Portfolio-frontend/index.html"
+      "dest": "/Portfolio-frontend/$1"
     }
   ]
 }
