@@ -15,12 +15,8 @@ function Footer() {
         <Col md="4" className="footer-body">
           <ul className="d-flex mb-0">
             <li className="social-icons">
-              <a
-                className="text-white"
-                href="https://github.com/pavan1003"
-                target="_blank"
-              >
-                <AiFillGithub size={25} />
+              <a className="text-white" href="https://github.com/pavan1003" target="_blank">
+                <AiFillGithub size={25} aria-label="Github icon" />
               </a>
             </li>
             <li className="social-icons">
@@ -29,25 +25,17 @@ function Footer() {
                 href="https://www.linkedin.com/in/pavan1003/"
                 target="_blank"
               >
-                <FaLinkedinIn size={25} />
+                <FaLinkedinIn size={25} aria-label="LinkedIn icon" />
               </a>
             </li>
             <li className="social-icons">
-              <a
-                className="text-white"
-                href="mailto:pavandm.03@gmail.com"
-                target="_blank"
-              >
-                <MdOutlineEmail size={25} />
+              <a className="text-white" href="mailto:pavandm.03@gmail.com" target="_blank">
+                <MdOutlineEmail size={25} aria-label="Email icon" />
               </a>
             </li>
             <li className="social-icons">
-              <a
-                className="text-white"
-                href="https://www.instagram.com/pavan_1003"
-                target="_blank"
-              >
-                <AiFillInstagram size={25} />
+              <a className="text-white" href="https://www.instagram.com/pavan_1003" target="_blank">
+                <AiFillInstagram size={25} aria-label="Instagram icon" />
               </a>
             </li>
           </ul>

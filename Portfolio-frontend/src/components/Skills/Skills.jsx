@@ -36,7 +36,7 @@ function Skills() {
             <Col key={index} xs={4} md={2} className="mb-3">
               <img
                 src={skill.skillImage}
-                alt={skill.skillName}
+                alt={`Logo of ${skill.skillName}`}
                 className="img-fluid rounded rounded-3 mb-1 skill-img"
               />
               <p>{skill.skillName}</p>

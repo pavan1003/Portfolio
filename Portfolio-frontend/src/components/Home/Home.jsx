@@ -55,7 +55,7 @@ function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <AiFillGithub size={45} />
+                      <AiFillGithub size={45} aria-label="Github icon" />
                     </a>
                     Github
                   </li>
@@ -66,7 +66,7 @@ function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FaLinkedinIn size={45} />
+                      <FaLinkedinIn size={45} aria-label="LinkedIn icon" />
                     </a>
                     LinkedIn
                   </li>
@@ -77,7 +77,7 @@ function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <MdOutlineEmail size={45} />
+                      <MdOutlineEmail size={45} aria-label="Email icon" />
                     </a>
                     Email
                   </li>
@@ -88,7 +88,7 @@ function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <AiFillInstagram size={45} />
+                      <AiFillInstagram size={45} aria-label="Instagram icon" />
                     </a>
                     Instagram
                   </li>
