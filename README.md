@@ -17,7 +17,7 @@ Make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (version 20.13 or higher)
 
-### Setup
+#### Setup
 
 1. Clone the repository:
    ```sh
@@ -73,18 +73,12 @@ Feel free to fork the repository and make changes. If you have any suggestions o
 
 ## Environment Variables
 
-Create a `.env` file in the root directory of your project and add the following variables:
+Create a `.env` file in the Portfolio-backend directory of your project and add the following variables:
 
 ```plaintext
-GROQ_API_KEY=your_groq_api_key
-SPOTIFY_CLIENT_ID=your_spotify_client_id
-SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+DBUSER=
+DBPWD=
+DBHOST=
+EMAIL_USER=
+EMAIL_PASS=
 ```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-If you have any questions or comments, you can reach me at [pavan@example.com](mailto:pavan@example.com).
