@@ -19,11 +19,11 @@ function AboutCard() {
   return (
     <section className="bsb-timeline-1 py-5 py-xl-8">
       <div className="container">
-        <div className="row justify-content-center">
+        <Row className="justify-content-center">
           <h1 className="project-heading pb-4">
             Professional <strong className="txt-color">Experiences</strong>
           </h1>
-          <div className="col-10 col-md-8 col-xl-6">
+          <Col md={8} xl={6} className="col-10">
             <ul className="timeline">
               {careers.map((career, index) => (
                 <li className="timeline-item" key={index}>
@@ -63,8 +63,8 @@ function AboutCard() {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
     </section>
   );
