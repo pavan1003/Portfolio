@@ -60,16 +60,16 @@ function Contact() {
           Let's Talk About <strong className="txt-color">Projects</strong>!
         </h1>
         <Row className="justify-content-center align-items-center pb-5">
-          <Col sm={6} md={6} className="text-start px-5">
-            <h3 className="mt-3 py-2">
+          <Col sm={6} md={6} className="text-start px-5 d-flex flex-column justify-content-center align-items-center ">
+            <h3 className="mt-3 py-2 text-center">
               Get In <strong className="txt-color">Touch</strong>.
             </h3>
-            <Form noValidate validated={validated} onSubmit={handleSubmit}>
-              <Form.Group className="mb-3" controlId="validationName">
+            <Form noValidate validated={validated} onSubmit={handleSubmit} className="w-75">
+              <Form.Group className="m-auto mb-3" controlId="validationName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   required
-                  className="w-75"
+                  className=""
                   type="text"
                   name="name"
                   placeholder="Enter your name"
@@ -84,7 +84,7 @@ function Contact() {
                 <Form.Label>Email</Form.Label>
                 <Form.Control
                   required
-                  className="w-75"
+                  className=""
                   type="email"
                   name="email"
                   placeholder="Enter your email"
@@ -99,7 +99,7 @@ function Contact() {
                 <Form.Label>Message</Form.Label>
                 <Form.Control
                   required
-                  className="w-75"
+                  className=""
                   as="textarea"
                   rows={3}
                   name="message"
@@ -135,7 +135,7 @@ function Contact() {
               </p>
             )}
           </Col>
-          <Col sm={6} md={6} className="text-start pt-5 px-5">
+          <Col sm={6} md={6} className="text-center pt-5 px-5">
             <h3 className="pb-2">
               Let's <strong className="txt-color">Talk</strong>.
             </h3>
@@ -146,11 +146,11 @@ function Contact() {
               >
                 pavandm.03@gmail.com
               </a>
-              <a className="text-white text-decoration-none" href="tel:+12898879438">
+              {/* <a className="text-white text-decoration-none" href="tel:+12898879438">
                 +1(289)-887-9438
-              </a>
+              </a> */}
             </Row>
-            <h3 className="mt-3 py-2">
+            {/* <h3 className="mt-3 py-2">
               Visit <strong className="txt-color">Me</strong>.
             </h3>
             <iframe
@@ -160,7 +160,7 @@ function Contact() {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            ></iframe> */}
           </Col>
         </Row>
       </Container>
