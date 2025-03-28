@@ -5,7 +5,7 @@ function AboutCard() {
   const [careers, setCareers] = useState([]);
 
   useEffect(() => {
-    fetch("/api/careers")
+    fetch(`${import.meta.env.VITE_API_URL}/careers`)
       .then((response) => response.json())
       .then((data) => {
         const sortedCareers = data.sort(

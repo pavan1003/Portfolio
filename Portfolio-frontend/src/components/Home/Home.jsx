@@ -81,17 +81,17 @@ function Home() {
                     </a>
                     Email
                   </li>
-                  <li className="social-icons">
+                  {/* <li className="social-icons">
                     <a
                       className="text-white"
-                      href="https://www.instagram.com/pavan_1003"
+                      href="https://www.instagram.com/pavaninnovates"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <AiFillInstagram size={45} aria-label="Instagram icon" />
                     </a>
                     Instagram
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </Col>

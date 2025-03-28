@@ -26,14 +26,13 @@ function Contact() {
       event.preventDefault();
       setIsLoading(true);
       try {
-        const response = await fetch("/api/send-email", {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/send-email`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(formData),
         });
-
         if (response.ok) {
           setFeedbackMessage("Message sent successfully!");
           setIsSuccess(true);

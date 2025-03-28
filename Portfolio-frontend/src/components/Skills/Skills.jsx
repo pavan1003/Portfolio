@@ -9,7 +9,8 @@ function Skills() {
   useEffect(() => {
     const fetchSkills = async () => {
       try {
-        const response = await fetch("/api/skills");
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/skills`);
+        console.log("Response:", response);
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
