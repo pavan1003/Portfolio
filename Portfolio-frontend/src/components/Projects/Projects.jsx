@@ -15,7 +15,8 @@ function Projects() {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        setProjects(data);
+        const sortedData = data.sort((a, b) => a.projectTitle.localeCompare(b.projectTitle));
+        setProjects(sortedData);
       } catch (error) {
         console.error("Error fetching projects:", error);
       }

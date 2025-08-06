@@ -49,11 +49,15 @@ function AboutCard() {
                                 {career.jobTitle} at {career.companyName}
                               </Col>
                             </Row>
-                            <figcaption class="blockquote-footer">{career.jobLocation}</figcaption>
+                            <figcaption className="blockquote-footer">
+                              {career.jobLocation}
+                            </figcaption>
                           </h4>
                           <ul className="ms-3">
-                            {career.jobDescription.map((description) => (
-                              <li className=" text-start card-text m-0">{description}</li>
+                            {career.jobDescription.map((description, index) => (
+                              <li className=" text-start card-text m-0" key={index}>
+                                {description}
+                              </li>
                             ))}
                           </ul>
                         </div>

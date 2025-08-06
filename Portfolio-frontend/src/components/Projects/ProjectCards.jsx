@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
@@ -7,7 +6,33 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt={`Preview image of ${props.title}`} />
+      <div style={{ position: "relative", width: "100%", textAlign: "center" }}>
+        <img
+          src="/project/ProjectFrame.png"
+          alt="Project frame"
+          style={{
+            width: "100%",
+            display: "block",
+            position: "relative",
+            zIndex: 1,
+          }}
+        />
+        <Card.Img
+          variant="top"
+          src={props.imgPath}
+          alt={`Preview image of ${props.title}`}
+          style={{
+            position: "absolute",
+            top: "8%",
+            left: "12%",
+            width: "76%",
+            height: "80%",
+            objectFit: "cover",
+            zIndex: 2,
+            borderRadius: "8px",
+          }}
+        />
+      </div>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text className="text-start">{props.description}</Card.Text>
