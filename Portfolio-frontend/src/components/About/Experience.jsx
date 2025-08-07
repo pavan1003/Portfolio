@@ -1,21 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 
-function AboutCard() {
-  const [careers, setCareers] = useState([]);
-
-  useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/careers`)
-      .then((response) => response.json())
-      .then((data) => {
-        const sortedCareers = data.sort(
-          (a, b) => new Date(b.jobStartDate) - new Date(a.jobStartDate)
-        );
-        setCareers(sortedCareers);
-      })
-      .catch((error) => console.error("Error fetching careers:", error));
-  }, []);
-
+function AboutCard({ careers }) {
   return (
     <section className="bsb-timeline-1 py-5 py-xl-8">
       <div className="container">
