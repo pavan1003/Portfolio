@@ -27,7 +27,7 @@ function ProjectCards(props) {
             left: "12%",
             width: "76%",
             height: "80%",
-            objectFit: "cover",
+            objectFit: "inherit",
             zIndex: 2,
             borderRadius: "8px",
           }}

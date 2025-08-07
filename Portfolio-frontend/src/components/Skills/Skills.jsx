@@ -33,7 +33,7 @@ function Skills() {
         </h1>
         <Row className="justify-content-center align-items-end pb-5">
           {skills.map((skill, index) => (
-            <Col key={index} xs={4} md={2} className="mb-3">
+            <Col key={index} xs={4} md={2} className="mb-3 skill-width">
               <img
                 src={skill.skillImage}
                 alt={`Logo of ${skill.skillName}`}

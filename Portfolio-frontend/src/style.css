@@ -419,6 +419,10 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+  .skill-width {
+    width: inherit !important;
+  }
+
   .about-img {
     padding-top: 0 !important;
   }
