@@ -25,7 +25,7 @@ function Skills() {
   }, []);
 
   return (
-    <Container fluid id="skills" className="about-section">
+    <Container fluid id="skills" className="section">
       <Particle />
       <Container>
         <h1 className="display-4 pb-3">

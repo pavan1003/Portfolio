@@ -7,15 +7,14 @@ function AboutCard({ careers }) {
       <Card.Body>
         <div className="blockquote mb-0 text-start">
           <p>
-            Hello, everyone! My name is <span className="txt-color">Pavan Mistry </span>, and I'm
-            from the vibrant city of <span className="txt-color">Vadodara in Gujarat, India.</span>
-            Currently, I'm working as a {careers[0]?.jobTitle || ""} at{" "}
-            {careers[0]?.companyName || ""}
+            Hi, I'm <span className="txt-color">Pavan Mistry</span> from
+            <span className="txt-color"> Vadodara, Gujarat</span>. I work as a{" "}
+            {careers[0]?.jobTitle || ""} at {careers[0]?.companyName || ""}, where I turn ideas into
+            clean, functional, and user-friendly software.
           </p>
           <p>
-            Apart from coding, I love travelling to new destinations as well as gliding around on my
-            skates. These interests keep me inspired and balanced, both in my professional and
-            personal life.
+            When I'm not coding, you'll probably find me exploring new places or skating around the
+            city— both keep me curious, creative, and balanced.
           </p>
         </div>
       </Card.Body>

@@ -35,6 +35,12 @@ button:focus {
   box-shadow: none !important;
 }
 
+.section{
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  color: white !important;
+}
+
 /* 2. PRELOADER */
 
 #preloader {
@@ -377,13 +383,6 @@ button:focus {
 }
 
 /* 6. ABOUT */
-
-.about-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  color: white !important;
-}
 
 @media (max-width: 767px) {
   .tech-icons {

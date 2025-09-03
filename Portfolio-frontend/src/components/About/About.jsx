@@ -20,7 +20,7 @@ function About() {
   }, []);
 
   return (
-    <Container fluid id="about" className="about-section">
+    <Container fluid id="about" className="section">
       <Particle />
       <Container>
         <Row className="justify-content-center py-3">

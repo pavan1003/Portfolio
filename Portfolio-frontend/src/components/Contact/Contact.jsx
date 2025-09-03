@@ -52,7 +52,7 @@ function Contact() {
   };
 
   return (
-    <Container fluid id="contact" className="about-section">
+    <Container fluid id="contact" className="section">
       <Particle />
       <Container>
         <h1 className="display-4 pb-3">
