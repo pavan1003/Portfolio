@@ -543,13 +543,6 @@ button:focus {
 
 /* 7. PROJECTS */
 
-.project-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  color: white !important;
-}
-
 .project-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
