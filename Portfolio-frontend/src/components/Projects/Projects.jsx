@@ -26,7 +26,7 @@ function Projects() {
   }, []);
 
   return (
-    <Container fluid id="projects" className="project-section">
+    <Container fluid id="projects" className="section">
       <Particle />
       <Container>
         <h1 className="display-4 pb-3">

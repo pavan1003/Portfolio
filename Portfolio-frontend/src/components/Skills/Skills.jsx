@@ -31,7 +31,7 @@ function Skills() {
         <h1 className="display-4 pb-3">
           Professional <strong className="txt-color">Skills</strong>
         </h1>
-        <Row className="justify-content-center align-items-end pb-5">
+        <Row className="justify-content-center align-items-end">
           {skills.map((skill, index) => (
             <Col key={index} xs={4} md={2} className="mb-3 skill-width">
               <img
