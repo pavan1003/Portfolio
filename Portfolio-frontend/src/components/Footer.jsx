@@ -33,11 +33,6 @@ function Footer() {
                 <MdOutlineEmail size={25} aria-label="Email icon" />
               </a>
             </li>
-            <li className="social-icons">
-              <a className="text-white" href="https://www.instagram.com/pavan_1003" target="_blank">
-                <AiFillInstagram size={25} aria-label="Instagram icon" />
-              </a>
-            </li>
           </ul>
         </Col>
       </Row>
