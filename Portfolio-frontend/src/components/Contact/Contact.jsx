@@ -22,6 +22,7 @@ function Contact() {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+      setValidated(true);
     } else {
       event.preventDefault();
       setIsLoading(true);
@@ -41,14 +42,14 @@ function Contact() {
           setIsSuccess(false);
         }
       } catch (error) {
-        setFeedbackMessage("An error occurred. Please try again.");
+        setFeedbackMessage("An error occurred. Please try again later.");
         setIsSuccess(false);
       } finally {
         setIsLoading(false);
+        setFormData({ name: "", email: "", message: "" });
+        setValidated(false);
       }
     }
-
-    setValidated(true);
   };
 
   return (
@@ -59,7 +60,11 @@ function Contact() {
           Let's Talk About <strong className="txt-color">Projects</strong>!
         </h1>
         <Row className="justify-content-center align-items-center pb-5">
-          <Col sm={6} md={6} className="text-start px-5 d-flex flex-column justify-content-center align-items-center ">
+          <Col
+            sm={6}
+            md={6}
+            className="text-start px-5 d-flex flex-column justify-content-center align-items-center "
+          >
             <h3 className="mt-3 py-2 text-center">
               Get In <strong className="txt-color">Touch</strong>.
             </h3>
@@ -129,9 +134,15 @@ function Contact() {
               </Button>
             </Form>
             {feedbackMessage && (
-              <p className={`mt-3 ${isSuccess ? "text-success" : "text-danger"}`}>
+              <div
+                className={`mt-3 px-3 py-2 rounded shadow-sm d-flex align-items-center text-center bg-dark fw-bold ${
+                  isSuccess
+                    ? "bg-success border border-success text-success"
+                    : "bg-danger border border-danger text-danger"
+                }`}
+              >
                 {feedbackMessage}
-              </p>
+              </div>
             )}
           </Col>
           <Col sm={6} md={6} className="text-center pt-5 px-5">
