@@ -27,6 +27,7 @@ function Header() {
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
+            updateNavbar(!expand);
           }}
         >
           <span></span>
