@@ -66,7 +66,7 @@ function Header() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="resume-btn">
+            {/* <Nav.Item className="resume-btn">
               <Button
                 className="resume-btn-inner"
                 variant="primary"
@@ -76,7 +76,7 @@ function Header() {
                 <CgFileDocument />
                 &nbsp; Resume
               </Button>
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
