@@ -7,16 +7,16 @@ function AboutCard({ careers }) {
       <Card.Body>
         <div className="blockquote mb-0 text-start">
           <p>
-            Hi, I'm <span class="txt-color">Pavan Mistry</span>. I work as a
-            <span class="txt-color"> {careers[0]?.jobTitle || "Tech Lead"}</span> at
-            <span class="txt-color"> {careers[0]?.companyName || "Pangeon Inc."}</span>, where I
-            turn ideas into clean, functional, and user-friendly software. Over the years, I’ve
-            built full-stack applications with React, Node.js, Laravel, and Python, focusing on
+            Hi, I'm <span className="txt-color">Pavan Mistry</span>. I work as a
+            <span className="txt-color"> {careers[0]?.jobTitle || "Tech Lead"}</span> at
+            <span className="txt-color"> {careers[0]?.companyName || "Pangeon Inc."}</span>, where I
+            turn ideas into clean, functional, and user-friendly software. Over the years, I've
+            built full-stack applications with React, Node.js, Laravel, ASP.NET and Python, focusing on
             making products that are reliable, scalable, and easy to use.
           </p>
 
           <p>
-            I enjoy solving problems that sit at the intersection of code and people, whether it’s
+            I enjoy solving problems that sit at the intersection of code and people, whether it's
             designing a smooth user experience, streamlining backend systems, or helping a team
             bring an idea to life. Collaboration and clear communication are just as important to me
             as writing good code.
