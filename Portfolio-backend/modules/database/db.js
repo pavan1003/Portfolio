@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const project = require("./models/project.js");
 const career = require("./models/career.js");
 const skill = require("./models/skill.js");
+const certification = require("./models/certification.js");
 
 // Construct the MongoDB connection URL using environment variables
 const dbUrl = `mongodb+srv://${process.env.DBUSER}:${process.env.DBPWD}@${process.env.DBHOST}`;
@@ -63,6 +64,22 @@ async function initializeSkills() {
   await skill.insertMany(skillList);
 }
 
+// Function to initialize the certifications collection with some data
+async function initializeCertifications() {
+  // Define an array of certification objects to be inserted into the collection
+  const certificationList = [
+    {
+      certName: "Cisco Cybersecurity Essentials",
+      certImage: "/certifications/CybersecurityEssentials.png",
+      certUrl: "https://www.credly.com/badges/1f769795-5e66-455e-a936-64daa334fded/public_url",
+    },
+  ];
+  // Ensure the database connection is established
+  await connect();
+  // Insert the list of certifications into the collection
+  await certification.insertMany(certificationList);
+}
+
 async function getCareers() {
   await connect(); // Ensure the database connection is established
   return await career.find({});
@@ -78,12 +95,19 @@ async function getSkills() {
   return await skill.find({});
 }
 
+async function getCertifications() {
+  await connect(); // Ensure the database connection is established
+  return await certification.find({});
+}
+
 // Export the database functions for use in other parts of the application
 module.exports = {
   getCareers,
   getProjects,
   getSkills,
+  getCertifications,
   initializeCareers,
   initializeProjects,
   initializeSkills,
+  initializeCertifications
 };

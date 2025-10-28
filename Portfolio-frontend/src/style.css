@@ -373,6 +373,7 @@ button:focus {
   padding-right: 15px;
   padding-left: 15px;
   color: #fff;
+  text-align: center;
 }
 
 .icon-colour {
@@ -423,6 +424,10 @@ button:focus {
     width: inherit !important;
   }
 
+  .cert-width {
+    width: inherit !important;
+  }
+
   .about-img {
     padding-top: 0 !important;
   }
@@ -435,8 +440,29 @@ button:focus {
 }
 
 .skill-img {
+  height: 100px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-img img {
   max-width: 100px !important;
-  height: auto;
+  max-height: 100px !important;
+  object-fit: contain;
+}
+
+.cert-img {
+  height: 150px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-img img {
+  max-width: 150px !important;
+  max-height: 150px !important;
+  object-fit: contain;
 }
 
 .py-8 {

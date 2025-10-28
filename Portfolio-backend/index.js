@@ -72,6 +72,21 @@ app.get("/api/skills", async (req, res) => {
   res.send(skillList);
 });
 
+// Route to handle GET requests to "/api/certifications"
+// This retrieves a list of certifications from the database
+app.get("/api/certifications", async (req, res) => {
+  let certificationList = await db.getCertifications();
+  
+  // If no certifications are found, initialize the data and fetch again
+  if (!certificationList.length) {
+    await db.initializeCertifications();
+    certificationList = await db.getCertifications();
+  }
+  
+  // Send the list of certifications as the response
+  res.send(certificationList);
+});
+
 // Route to handle POST requests to "/api/send-email"
 // This sends an email using the provided name, email, and message from the request body
 app.post("/api/send-email", async (req, res) => {

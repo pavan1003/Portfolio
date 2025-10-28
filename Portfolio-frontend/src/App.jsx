@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import Certifications from "./components/Certifications/Certifications";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
@@ -30,6 +31,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Certifications />
         <Projects />
         <Contact />
         <Footer />
