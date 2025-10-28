@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 
 function AboutCard({ careers }) {
@@ -6,8 +5,8 @@ function AboutCard({ careers }) {
     <section className="bsb-timeline-1 py-5 py-xl-8">
       <div className="container">
         <Row className="justify-content-center">
-          <h1 className="project-heading pb-4">
-            Professional <strong className="txt-color">Experiences</strong>
+          <h1 className="display-4 pb-4">
+            Work <strong className="txt-color">Experiences</strong>
           </h1>
           <Col md={8} xl={6} className="col-10">
             <ul className="timeline">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
@@ -29,10 +29,10 @@ function Projects() {
     <Container fluid id="projects" className="section">
       <Particle />
       <Container>
-        <h1 className="display-4 pb-3">
+        <h1 className="display-4">
           My Recent <strong className="txt-color">Projects </strong>
         </h1>
-        <p>Here are a few projects I've worked on recently.</p>
+        {/* <p>Here are a few projects I've worked on recently.</p> */}
         <Row className="justify-content-center pb-5">
           {projects.map((project, index) => (
             <Col key={index} md={4} className="project-card">

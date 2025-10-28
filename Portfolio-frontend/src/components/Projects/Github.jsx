@@ -4,7 +4,7 @@ import { Row } from "react-bootstrap";
 function Github() {
   return (
     <Row className="justify-content-center pb-3">
-      <h1 className="project-heading pb-4">
+      <h1 className="display-4 pb-4">
         My <strong className="txt-color">Code</strong> History
       </h1>
       <div className="d-flex justify-content-center align-items-center">
