@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Typewriter from "typewriter-effect";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaStackOverflow } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
 function Home() {
@@ -80,6 +80,17 @@ function Home() {
                       <MdOutlineEmail size={45} aria-label="Email icon" />
                     </a>
                     Email
+                  </li>
+                  <li className="social-icons">
+                    <a
+                      className="text-white"
+                      href="https://stackoverflow.com/users/14271094/pavan-mistry"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaStackOverflow  size={45} aria-label="Stack Overflow icon" />
+                    </a>
+                    Stack
                   </li>
                   {/* <li className="social-icons">
                     <a
